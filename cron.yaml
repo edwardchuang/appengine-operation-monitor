@@ -1,0 +1,4 @@
+cron:
+- description: "check instance operation logs"
+  url: /cron
+  schedule: every 2 minutes
