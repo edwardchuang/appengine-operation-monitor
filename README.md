@@ -13,6 +13,7 @@ A cron on GAE to monitor and notify any compute.instances.migrateOnHostMaintenan
 # deploy
 
 % gcloud app deploy
+
 % gcloud app deploy cron.yaml
 
 # local test
