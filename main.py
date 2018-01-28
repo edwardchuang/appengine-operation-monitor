@@ -39,7 +39,7 @@ class CronJob(webapp2.RequestHandler):
             rows += tmp
         body = body.replace('%%ROWS%%', rows).replace("%%PROJECT%%", project)
         message = mail.EmailMessage(
-            sender='{}@appspot.gserviceaccount.com'.format(app_identity.get_application_id()), 
+            sender='noreply@{}.appspotmail.com'.format(app_identity.get_application_id()), 
             subject="Instance Operations Detected")
         message.to = os.environ.get('NOTIFICATION_RECEIVER')
         message.html = body
